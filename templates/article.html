@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{SEO_TITLE}}</title>
+  <meta name="description" content="{{META_DESC}}">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  {{HREFLANG_TAGS}}
+  {{STRUCTURED_DATA}}
+  {{OG_TAGS}}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{SEO_TITLE}}">
+  <meta name="twitter:description" content="{{META_DESC}}">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/rss+xml" title="{{SITE_NAME}} - {{LANG_NAME}}" href="/feed-{{LANG}}.xml">
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="/{{LANG}}/" class="site-logo"><span class="logo-gold">指南帮</span>旅游</a>
+        <nav class="main-nav">
+          {{MAIN_NAV}}
+        </nav>
+      </div>
+      <div class="header-right">
+        <nav class="lang-nav">
+          {{LANG_SWITCHER}}
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="article-page">
+      <h1>{{TITLE}}</h1>
+      <div class="article-meta">
+        📅 {{PUBLISH_DATE}} &middot; 🏷️ {{CATEGORY}} &middot; 🌐 <a href="/{{LANG}}/">{{LANG_NAME}}</a>
+      </div>
+      {{FEATURED_IMAGE}}
+        <div class="article-content">
+        {{CONTENT}}
+      </div>
+
+      <div class="faq-section">
+        <h2>{{FAQ_TITLE}}</h2>
+        {{FAQ_ITEMS}}
+      </div>
+
+      <div class="article-tags" style="margin-top:30px">
+        {{TAGS}}
+      </div>
+
+      <div style="margin-top:24px; font-size:14px; color:var(--text-light)">
+        <a href="/{{LANG}}/" class="back-link">← {{BACK_TEXT}}</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <h3>{{SITE_NAME}}</h3>
+    <p>{{SITE_DESC}}</p>
+    <div class="footer-contact">
+      <p>📱 微信：{{WECHAT}} | 💬 WhatsApp：{{WHATSAPP}} | 📧 {{EMAIL}}</p>
+    </div>
+  </footer>
+</body>
+</html>

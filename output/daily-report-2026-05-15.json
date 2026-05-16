@@ -1,0 +1,84 @@
+{
+  "date": "2026-05-15",
+  "articles": {
+    "total": 8,
+    "byLanguage": {
+      "en": {
+        "count": 2,
+        "categories": [
+          "Hainan Food",
+          "Hainan Family Travel"
+        ]
+      },
+      "ja": {
+        "count": 1,
+        "categories": [
+          "Hainan Travel"
+        ]
+      },
+      "ko": {
+        "count": 1,
+        "categories": [
+          "Hainan Travel"
+        ]
+      },
+      "ru": {
+        "count": 1,
+        "categories": [
+          "Hainan Travel"
+        ]
+      },
+      "th": {
+        "count": 1,
+        "categories": [
+          "Hainan Travel"
+        ]
+      },
+      "zh": {
+        "count": 2,
+        "categories": [
+          "海南美食",
+          "海南亲子游"
+        ]
+      }
+    }
+  },
+  "videoScripts": 3,
+  "socialCopy": 294,
+  "keywords": [
+    {
+      "lang": "zh",
+      "keyword": "三亚旅游",
+      "priority": 1
+    },
+    {
+      "lang": "en",
+      "keyword": "Hainan family travel",
+      "priority": 2
+    },
+    {
+      "lang": "ru",
+      "keyword": "Санья путешествие",
+      "priority": 1
+    },
+    {
+      "lang": "ko",
+      "keyword": "싼야 여행",
+      "priority": 1
+    },
+    {
+      "lang": "ja",
+      "keyword": "三亚観光",
+      "priority": 1
+    },
+    {
+      "lang": "th",
+      "keyword": "สถานที่ท่องเที่ยวไหหลำ",
+      "priority": 2
+    }
+  ],
+  "errors": 1,
+  "warnings": 0,
+  "humanConfirm": [],
+  "status": "running"
+}

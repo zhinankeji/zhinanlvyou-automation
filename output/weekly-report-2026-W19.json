@@ -1,0 +1,18 @@
+{
+  "period": {
+    "start": "2026-05-04",
+    "end": "2026-05-11",
+    "week": 19
+  },
+  "totalArticles": 0,
+  "byLanguage": {},
+  "byCategory": {},
+  "topKeywords": {},
+  "weeklyGrowth": {},
+  "riskItems": [
+    "门票价格和开放时间需人工核实",
+    "签证政策变化需人工关注",
+    "自动发布功能未开启 (AUTO_PUBLISH=false)"
+  ],
+  "status": "running"
+}

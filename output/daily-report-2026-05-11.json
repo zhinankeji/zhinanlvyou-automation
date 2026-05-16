@@ -1,0 +1,82 @@
+{
+  "date": "2026-05-11",
+  "articles": {
+    "total": 6,
+    "byLanguage": {
+      "en": {
+        "count": 1,
+        "categories": [
+          "Sanya Travel"
+        ]
+      },
+      "ja": {
+        "count": 1,
+        "categories": [
+          "三亚旅游"
+        ]
+      },
+      "ko": {
+        "count": 1,
+        "categories": [
+          "三亚旅游"
+        ]
+      },
+      "ru": {
+        "count": 1,
+        "categories": [
+          "三亚旅游"
+        ]
+      },
+      "th": {
+        "count": 1,
+        "categories": [
+          "三亚旅游"
+        ]
+      },
+      "zh": {
+        "count": 1,
+        "categories": [
+          "三亚旅游"
+        ]
+      }
+    }
+  },
+  "videoScripts": 3,
+  "socialCopy": 6,
+  "keywords": [
+    {
+      "lang": "zh",
+      "keyword": "三亚自由行攻略",
+      "priority": 2
+    },
+    {
+      "lang": "en",
+      "keyword": "Hainan travel guide",
+      "priority": 1
+    },
+    {
+      "lang": "ru",
+      "keyword": "Санья путешествие",
+      "priority": 1
+    },
+    {
+      "lang": "ko",
+      "keyword": "싼야 여행",
+      "priority": 1
+    },
+    {
+      "lang": "ja",
+      "keyword": "三亚観光",
+      "priority": 1
+    },
+    {
+      "lang": "th",
+      "keyword": "ซานย่า",
+      "priority": 1
+    }
+  ],
+  "errors": 0,
+  "warnings": 0,
+  "humanConfirm": [],
+  "status": "running"
+}

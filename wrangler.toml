@@ -1,0 +1,6 @@
+name = "zhinanlvyou"
+compatibility_date = "2026-05-15"
+
+[pages]
+build_command = "node scripts/build-site.js"
+build_output = "output/site"

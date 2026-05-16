@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{META_DESC}}">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  {{HREFLANG_TAGS}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "{{PAGE_TITLE}}",
+    "description": "{{META_DESC}}"
+  }
+  </script>
+  <meta property="og:title" content="{{PAGE_TITLE}}">
+  <meta property="og:description" content="{{META_DESC}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:site_name" content="{{SITE_NAME}}">
+  <meta property="og:locale" content="{{OG_LOCALE}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/rss+xml" title="{{SITE_NAME}} - {{LANG_NAME}}" href="/feed-{{LANG}}.xml">
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="/{{LANG}}/" class="site-logo"><span class="logo-gold">指南帮</span>旅游</a>
+        <nav class="main-nav">
+          {{MAIN_NAV}}
+        </nav>
+      </div>
+      <div class="header-right">
+        <nav class="lang-nav">
+          {{LANG_SWITCHER}}
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="hero-divider" style="height:0"></div>
+
+  <main class="container">
+
+    <div class="section-header"><h2 class="section-title">{{SECTION_TITLE}}</h2></div>
+
+    {{GRID_CARDS}}
+
+    {{EMPTY_STATE}}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <h3>{{SITE_NAME}}</h3>
+      <p>{{SITE_DESC}}</p>
+      <div class="footer-contact">
+        <p>📱 微信：{{WECHAT}} | 💬 WhatsApp：{{WHATSAPP}} | 📧 {{EMAIL}}</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

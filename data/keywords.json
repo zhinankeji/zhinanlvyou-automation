@@ -1,0 +1,231 @@
+{
+  "zh": [
+    {
+      "keyword": "海南旅游",
+      "priority": 1,
+      "target": "/zh/destinations/",
+      "lastUpdated": "2026-05-15"
+    },
+    {
+      "keyword": "海南旅游攻略",
+      "priority": 1,
+      "target": "/zh/blog/hainan-travel-guide/"
+    },
+    {
+      "keyword": "三亚旅游",
+      "priority": 1,
+      "target": "/zh/sanya/",
+      "lastUpdated": "2026-05-15"
+    },
+    {
+      "keyword": "海南景点",
+      "priority": 1,
+      "target": "/zh/destinations/"
+    },
+    {
+      "keyword": "海南门票",
+      "priority": 2,
+      "target": "/zh/tickets/"
+    },
+    {
+      "keyword": "海南亲子游",
+      "priority": 2,
+      "target": "/zh/family-travel/",
+      "lastUpdated": "2026-05-15"
+    },
+    {
+      "keyword": "海南自由行",
+      "priority": 1,
+      "target": "/zh/free-travel/",
+      "lastUpdated": "2026-05-15"
+    },
+    {
+      "keyword": "万宁冲浪",
+      "priority": 2,
+      "target": "/zh/wanning/"
+    },
+    {
+      "keyword": "南山寺门票",
+      "priority": 3,
+      "target": "/zh/tickets/nanshan-temple/"
+    },
+    {
+      "keyword": "蜈支洲岛门票",
+      "priority": 3,
+      "target": "/zh/tickets/wuzhizhou-island/"
+    },
+    {
+      "keyword": "海口旅游",
+      "priority": 2,
+      "target": "/zh/haikou/"
+    },
+    {
+      "keyword": "儋州旅游",
+      "priority": 3,
+      "target": "/zh/danzhou/"
+    },
+    {
+      "keyword": "海南美食",
+      "priority": 2,
+      "target": "/zh/food/"
+    },
+    {
+      "keyword": "三亚自由行攻略",
+      "priority": 2,
+      "target": "/zh/free-travel/sanya/"
+    },
+    {
+      "keyword": "海南旅游路线",
+      "priority": 2,
+      "target": "/zh/routes/"
+    }
+  ],
+  "en": [
+    {
+      "keyword": "Hainan travel",
+      "priority": 1,
+      "target": "/en/destinations/",
+      "lastUpdated": "2026-05-15"
+    },
+    {
+      "keyword": "Hainan travel guide",
+      "priority": 1,
+      "target": "/en/blog/hainan-travel-guide/"
+    },
+    {
+      "keyword": "Sanya travel",
+      "priority": 1,
+      "target": "/en/sanya/",
+      "lastUpdated": "2026-05-15"
+    },
+    {
+      "keyword": "Hainan attractions",
+      "priority": 1,
+      "target": "/en/destinations/"
+    },
+    {
+      "keyword": "Hainan tickets",
+      "priority": 2,
+      "target": "/en/tickets/"
+    },
+    {
+      "keyword": "Hainan family travel",
+      "priority": 2,
+      "target": "/en/family-travel/"
+    },
+    {
+      "keyword": "Hainan beaches",
+      "priority": 1,
+      "target": "/en/blog/hainan-beaches/",
+      "lastUpdated": "2026-05-15"
+    },
+    {
+      "keyword": "Wuzhizhou Island ticket",
+      "priority": 3,
+      "target": "/en/tickets/wuzhizhou-island/"
+    },
+    {
+      "keyword": "Nanshan Temple ticket",
+      "priority": 3,
+      "target": "/en/tickets/nanshan-temple/"
+    },
+    {
+      "keyword": "Hainan free travel",
+      "priority": 2,
+      "target": "/en/free-travel/"
+    },
+    {
+      "keyword": "Sanya attractions",
+      "priority": 2,
+      "target": "/en/sanya/"
+    },
+    {
+      "keyword": "Hainan food",
+      "priority": 2,
+      "target": "/en/food/"
+    }
+  ],
+  "ru": [
+    {
+      "keyword": "Хайнань туризм",
+      "priority": 1,
+      "target": "/ru/destinations/"
+    },
+    {
+      "keyword": "Санья путешествие",
+      "priority": 1,
+      "target": "/ru/sanya/"
+    },
+    {
+      "keyword": "достопримечательности Хайнаня",
+      "priority": 2,
+      "target": "/ru/destinations/"
+    },
+    {
+      "keyword": "билеты на Хайнань",
+      "priority": 2,
+      "target": "/ru/tickets/"
+    }
+  ],
+  "ko": [
+    {
+      "keyword": "하이난 여행",
+      "priority": 1,
+      "target": "/ko/"
+    },
+    {
+      "keyword": "싼야 여행",
+      "priority": 1,
+      "target": "/ko/sanya/"
+    },
+    {
+      "keyword": "하이난 명소",
+      "priority": 2,
+      "target": "/ko/destinations/"
+    },
+    {
+      "keyword": "하이난 자유여행",
+      "priority": 2,
+      "target": "/ko/free-travel/"
+    }
+  ],
+  "ja": [
+    {
+      "keyword": "海南旅行",
+      "priority": 1,
+      "target": "/ja/"
+    },
+    {
+      "keyword": "三亚観光",
+      "priority": 1,
+      "target": "/ja/sanya/"
+    },
+    {
+      "keyword": "海南観光スポット",
+      "priority": 2,
+      "target": "/ja/destinations/"
+    },
+    {
+      "keyword": "海南グルメ",
+      "priority": 2,
+      "target": "/ja/food/"
+    }
+  ],
+  "th": [
+    {
+      "keyword": "เที่ยวไหหลำ",
+      "priority": 1,
+      "target": "/th/"
+    },
+    {
+      "keyword": "ซานย่า",
+      "priority": 1,
+      "target": "/th/sanya/"
+    },
+    {
+      "keyword": "สถานที่ท่องเที่ยวไหหลำ",
+      "priority": 2,
+      "target": "/th/destinations/"
+    }
+  ]
+}

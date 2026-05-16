@@ -1,0 +1,62 @@
+{
+  "zh": {
+    "name": "中文",
+    "locale": "zh-CN",
+    "dir": "/zh/",
+    "flag": "🇨🇳",
+    "daily": 2,
+    "siteTitle": "指南帮旅游",
+    "siteDesc": "全球游客的海南旅行入口",
+    "metaSuffix": " - 指南帮旅游"
+  },
+  "en": {
+    "name": "English",
+    "locale": "en-US",
+    "dir": "/en/",
+    "flag": "🇺🇸",
+    "daily": 2,
+    "siteTitle": "Guide to Hainan",
+    "siteDesc": "Travel Guides, Tickets Consultation & Local Trip Support",
+    "metaSuffix": " - Guide to Hainan"
+  },
+  "ru": {
+    "name": "Русский",
+    "locale": "ru-RU",
+    "dir": "/ru/",
+    "flag": "🇷🇺",
+    "daily": 1,
+    "siteTitle": "Путеводитель по Хайнаню",
+    "siteDesc": "Путеводитель по Хайнаню, консультации по билетам и местные туры",
+    "metaSuffix": " - Путеводитель по Хайнаню"
+  },
+  "ko": {
+    "name": "한국어",
+    "locale": "ko-KR",
+    "dir": "/ko/",
+    "flag": "🇰🇷",
+    "daily": 1,
+    "siteTitle": "하이난 여행 가이드",
+    "siteDesc": "하이난 명소, 티켓 문의 및 현지 여행 서비스",
+    "metaSuffix": " - 하이난 여행 가이드"
+  },
+  "ja": {
+    "name": "日本語",
+    "locale": "ja-JP",
+    "dir": "/ja/",
+    "flag": "🇯🇵",
+    "daily": 1,
+    "siteTitle": "海南旅行ガイド",
+    "siteDesc": "海南の観光スポット、チケット案内、現地旅行サポート",
+    "metaSuffix": " - 海南旅行ガイド"
+  },
+  "th": {
+    "name": "ไทย",
+    "locale": "th-TH",
+    "dir": "/th/",
+    "flag": "🇹🇭",
+    "daily": 1,
+    "siteTitle": "ไกด์นำเที่ยวไหหลำ",
+    "siteDesc": "สถานที่ท่องเที่ยวไหหลำ จองตั๋ว และบริการท่องเที่ยวในท้องถิ่น",
+    "metaSuffix": " - ไกด์นำเที่ยวไหหลำ"
+  }
+}

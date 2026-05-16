@@ -1,0 +1,46 @@
+{
+  "name": "zhinanlvyou-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "指南帮旅游 - 全球多语种 AI 自动运营系统 V1.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "daily": "node scripts/news-harvester.js && node scripts/daily-run.js && node scripts/build-site.js",
+    "weekly": "node scripts/weekly-run.js",
+    "generate-zh": "node -e \"require('./services/content').generateAll('zh')\"",
+    "generate-en": "node -e \"require('./services/content').generateAll('en')\"",
+    "seo-check": "node scripts/seo-monitor.js",
+    "report-daily": "node -e \"require('./services/report').generateDailyReport()\"",
+    "report-weekly": "node -e \"require('./services/report').generateWeeklyReport()\"",
+    "test": "node -e \"console.log('✅ 指南帮旅游自动化系统 V1.0 正常')\"",
+    "build-site": "node scripts/build-site.js",
+    "deploy": "node scripts/deploy.js",
+    "publish": "node scripts/build-site.js && node scripts/deploy.js",
+    "harvest": "node scripts/news-harvester.js",
+    "ops": "node hermes-ops.js",
+    "ops:full": "node hermes-ops.js full",
+    "ops:auto": "node hermes-ops.js auto",
+    "ops:status": "node hermes-ops.js status",
+    "fetch-images": "node scripts/fetch-images.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "dotenv": "^16.4.0"
+  },
+  "keywords": [
+    "hainan",
+    "travel",
+    "tourism",
+    "seo",
+    "content-automation",
+    "multilingual"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.90.1"
+  }
+}

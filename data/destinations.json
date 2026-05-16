@@ -1,0 +1,272 @@
+{
+  "zh": [
+    {
+      "name": "三亚",
+      "slug": "sanya",
+      "desc": "中国最受欢迎的热带海滨度假城市",
+      "tags": [
+        "海滩",
+        "度假",
+        "潜水",
+        "免税"
+      ]
+    },
+    {
+      "name": "海口",
+      "slug": "haikou",
+      "desc": "海南省会，历史文化与现代化并存",
+      "tags": [
+        "城市",
+        "文化",
+        "美食",
+        "购物"
+      ]
+    },
+    {
+      "name": "儋州",
+      "slug": "danzhou",
+      "desc": "千年古郡，东坡文化发源地",
+      "tags": [
+        "文化",
+        "历史",
+        "温泉"
+      ]
+    },
+    {
+      "name": "万宁",
+      "slug": "wanning",
+      "desc": "冲浪胜地，日月湾闻名全球",
+      "tags": [
+        "冲浪",
+        "海滩",
+        "运动"
+      ]
+    },
+    {
+      "name": "琼海",
+      "slug": "qionghai",
+      "desc": "博鳌亚洲论坛所在地",
+      "tags": [
+        "会议",
+        "文化",
+        "乡村"
+      ]
+    },
+    {
+      "name": "文昌",
+      "slug": "wenchang",
+      "desc": "航天发射中心，椰子之乡",
+      "tags": [
+        "航天",
+        "美食",
+        "文化"
+      ]
+    },
+    {
+      "name": "五指山",
+      "slug": "wuzhishan",
+      "desc": "海南岛最高峰，热带雨林探险",
+      "tags": [
+        "雨林",
+        "登山",
+        "探险"
+      ]
+    },
+    {
+      "name": "东方",
+      "slug": "dongfang",
+      "desc": "海南西部中心城市，鱼鳞洲闻名",
+      "tags": [
+        "海滩",
+        "城市",
+        "美食"
+      ]
+    },
+    {
+      "name": "陵水",
+      "slug": "lingshui",
+      "desc": "清水湾与分界洲岛所在地",
+      "tags": [
+        "海滩",
+        "岛屿",
+        "度假"
+      ]
+    },
+    {
+      "name": "定安",
+      "slug": "dingan",
+      "desc": "海南历史文化名城",
+      "tags": [
+        "文化",
+        "历史",
+        "美食"
+      ]
+    },
+    {
+      "name": "屯昌",
+      "slug": "tunchang",
+      "desc": "海南中部生态休闲胜地",
+      "tags": [
+        "生态",
+        "休闲",
+        "乡村"
+      ]
+    },
+    {
+      "name": "澄迈",
+      "slug": "chengmai",
+      "desc": "世界长寿之乡",
+      "tags": [
+        "长寿",
+        "文化",
+        "生态"
+      ]
+    },
+    {
+      "name": "临高",
+      "slug": "lingao",
+      "desc": "海南渔业大县，临高角闻名",
+      "tags": [
+        "海滩",
+        "渔业",
+        "历史"
+      ]
+    },
+    {
+      "name": "昌江",
+      "slug": "changjiang",
+      "desc": "海南木棉花之乡",
+      "tags": [
+        "自然",
+        "花卉",
+        "生态"
+      ]
+    },
+    {
+      "name": "乐东",
+      "slug": "ledong",
+      "desc": "海南西南部滨海城市",
+      "tags": [
+        "海滩",
+        "农业",
+        "生态"
+      ]
+    },
+    {
+      "name": "保亭",
+      "slug": "baoting",
+      "desc": "海南黎苗文化核心区",
+      "tags": [
+        "文化",
+        "雨林",
+        "温泉"
+      ]
+    },
+    {
+      "name": "琼中",
+      "slug": "qiongzhong",
+      "desc": "海南岛地理中心，黎母山所在地",
+      "tags": [
+        "雨林",
+        "文化",
+        "生态"
+      ]
+    },
+    {
+      "name": "白沙",
+      "slug": "baisha",
+      "desc": "海南生态核心区",
+      "tags": [
+        "生态",
+        "雨林",
+        "乡村"
+      ]
+    },
+    {
+      "name": "三沙",
+      "slug": "sansha",
+      "desc": "中国最南端的地级市",
+      "tags": [
+        "岛屿",
+        "海洋",
+        "南海"
+      ]
+    }
+  ],
+  "en": [
+    {
+      "name": "Sanya",
+      "slug": "sanya",
+      "desc": "China's most popular tropical beach resort city",
+      "tags": [
+        "beach",
+        "resort",
+        "diving"
+      ]
+    },
+    {
+      "name": "Haikou",
+      "slug": "haikou",
+      "desc": "Capital of Hainan, blend of history and modernity",
+      "tags": [
+        "city",
+        "culture",
+        "food"
+      ]
+    },
+    {
+      "name": "Danzhou",
+      "slug": "danzhou",
+      "desc": "Ancient city with thousand years of history",
+      "tags": [
+        "culture",
+        "history"
+      ]
+    },
+    {
+      "name": "Wanning",
+      "slug": "wanning",
+      "desc": "Surfing paradise home to Riyue Bay",
+      "tags": [
+        "surfing",
+        "beach"
+      ]
+    },
+    {
+      "name": "Qionghai",
+      "slug": "qionghai",
+      "desc": "Home of the Boao Forum for Asia",
+      "tags": [
+        "conference",
+        "culture"
+      ]
+    },
+    {
+      "name": "Wenchang",
+      "slug": "wenchang",
+      "desc": "Space launch center, coconut capital",
+      "tags": [
+        "space",
+        "food"
+      ]
+    },
+    {
+      "name": "Lingshui",
+      "slug": "lingshui",
+      "desc": "Home to清水湾 Clear Water Bay",
+      "tags": [
+        "beach",
+        "island"
+      ]
+    },
+    {
+      "name": "Baoting",
+      "slug": "baoting",
+      "desc": "Li and Miao ethnic culture center",
+      "tags": [
+        "culture",
+        "rainforest"
+      ]
+    }
+  ]
+}

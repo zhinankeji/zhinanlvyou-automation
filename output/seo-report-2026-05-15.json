@@ -1,0 +1,196 @@
+{
+  "summary": {
+    "totalArticles": 8,
+    "totalScore": 432,
+    "avgScore": 54,
+    "excellent": 0,
+    "good": 0,
+    "needsImprovement": 6,
+    "poor": 2,
+    "byLang": {
+      "en": {
+        "count": 2,
+        "avgScore": 59
+      },
+      "ja": {
+        "count": 1,
+        "avgScore": 54
+      },
+      "ko": {
+        "count": 1,
+        "avgScore": 54
+      },
+      "ru": {
+        "count": 1,
+        "avgScore": 54
+      },
+      "th": {
+        "count": 1,
+        "avgScore": 54
+      },
+      "zh": {
+        "count": 2,
+        "avgScore": 49
+      }
+    }
+  },
+  "details": [
+    {
+      "lang": "zh",
+      "file": "2026-05-15-haikou-美食.json",
+      "title": "海口美食指南",
+      "slug": "haikou-美食",
+      "score": 49,
+      "wordCount": 154,
+      "keywordCoverage": 0,
+      "issues": 5,
+      "hasFaq": true
+    },
+    {
+      "lang": "zh",
+      "file": "2026-05-15-sanya-亲子游.json",
+      "title": "三亚亲子游攻略",
+      "slug": "sanya-亲子游",
+      "score": 49,
+      "wordCount": 185,
+      "keywordCoverage": 0,
+      "issues": 5,
+      "hasFaq": true
+    },
+    {
+      "lang": "ja",
+      "file": "2026-05-15--guide.json",
+      "title": "三亚 Travel Guide",
+      "slug": "-guide",
+      "score": 54,
+      "wordCount": 6,
+      "keywordCoverage": 0,
+      "issues": 5,
+      "hasFaq": true
+    },
+    {
+      "lang": "ko",
+      "file": "2026-05-15--guide.json",
+      "title": "三亚 Travel Guide",
+      "slug": "-guide",
+      "score": 54,
+      "wordCount": 6,
+      "keywordCoverage": 0,
+      "issues": 5,
+      "hasFaq": true
+    },
+    {
+      "lang": "ru",
+      "file": "2026-05-15--guide.json",
+      "title": "三亚 Travel Guide",
+      "slug": "-guide",
+      "score": 54,
+      "wordCount": 6,
+      "keywordCoverage": 0,
+      "issues": 5,
+      "hasFaq": true
+    },
+    {
+      "lang": "th",
+      "file": "2026-05-15--guide.json",
+      "title": "三亚 Travel Guide",
+      "slug": "-guide",
+      "score": 54,
+      "wordCount": 6,
+      "keywordCoverage": 0,
+      "issues": 5,
+      "hasFaq": true
+    },
+    {
+      "lang": "en",
+      "file": "2026-05-15-haikou-hainan-food.json",
+      "title": "Haikou Food Guide",
+      "slug": "haikou-hainan-food",
+      "score": 59,
+      "wordCount": 20,
+      "keywordCoverage": 0,
+      "issues": 4,
+      "hasFaq": true
+    },
+    {
+      "lang": "en",
+      "file": "2026-05-15-sanya-hainan-family-travel.json",
+      "title": "Top Attractions in Sanya",
+      "slug": "sanya-hainan-family-travel",
+      "score": 59,
+      "wordCount": 23,
+      "keywordCoverage": 0,
+      "issues": 4,
+      "hasFaq": true
+    }
+  ],
+  "recommendations": [
+    {
+      "field": "content",
+      "affectedCount": 8,
+      "totalImpact": 120,
+      "suggestion": "文章正文建议至少 300 词，增加深度内容"
+    },
+    {
+      "field": "keywords",
+      "affectedCount": 8,
+      "totalImpact": 80,
+      "suggestion": "在标题和正文中自然融入高优先级关键词"
+    },
+    {
+      "field": "metaDescription",
+      "affectedCount": 8,
+      "totalImpact": 64,
+      "suggestion": "为每篇文章补充至少 50 字的 Meta Description"
+    },
+    {
+      "field": "contact",
+      "affectedCount": 8,
+      "totalImpact": 40,
+      "suggestion": "优化 contact"
+    },
+    {
+      "field": "links",
+      "affectedCount": 8,
+      "totalImpact": 24,
+      "suggestion": "添加指向其他相关文章的内链"
+    }
+  ],
+  "sortedIssues": [
+    {
+      "field": "content",
+      "count": 8,
+      "totalDeduction": 120
+    },
+    {
+      "field": "keywords",
+      "count": 8,
+      "totalDeduction": 80
+    },
+    {
+      "field": "metaDescription",
+      "count": 8,
+      "totalDeduction": 64
+    },
+    {
+      "field": "contact",
+      "count": 8,
+      "totalDeduction": 40
+    },
+    {
+      "field": "links",
+      "count": 8,
+      "totalDeduction": 24
+    },
+    {
+      "field": "headings",
+      "count": 4,
+      "totalDeduction": 20
+    },
+    {
+      "field": "title",
+      "count": 2,
+      "totalDeduction": 20
+    }
+  ]
+}

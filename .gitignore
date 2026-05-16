@@ -1,0 +1,14 @@
+node_modules/
+.env
+output/site/
+output/social/
+output/video/
+output/_payload.bin
+output/_deploy.bin
+output/_deploy.dat
+logs/
+articles/
+_*.js
+_*.bat
+*.log
+.DS_Store
