@@ -829,6 +829,41 @@ async function main() {
   writeFileSync(path.join(OUTPUT_DIR, "feed.xml"), generateRssFeed(allArticles["zh"] || [], "zh"));
   console.log("  ✅ feed.xml + 6 语言 feed");
   
+  // 生成根首页（301重定向到 /zh/）
+  const rootIndexPath = path.join(OUTPUT_DIR, "index.html");
+  if (!fs.existsSync(rootIndexPath)) {
+    const baseUrl = SITE_CONFIG.domain;
+    const rootHtml = [
+      '<!DOCTYPE html>',
+      '<html lang="zh-CN">',
+      '<head>',
+      '    <meta charset="UTF-8">',
+      '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+      '    <title>' + LANGUAGES.zh.siteTitle + '</title>',
+      '    <meta http-equiv="refresh" content="0; url=/zh/">',
+      '    <link rel="canonical" href="' + baseUrl + '/zh/">',
+      '    <link rel="alternate" hreflang="zh" href="' + baseUrl + '/zh/">',
+      '    <link rel="alternate" hreflang="en" href="' + baseUrl + '/en/">',
+      '    <link rel="alternate" hreflang="ru" href="' + baseUrl + '/ru/">',
+      '    <link rel="alternate" hreflang="ko" href="' + baseUrl + '/ko/">',
+      '    <link rel="alternate" hreflang="ja" href="' + baseUrl + '/ja/">',
+      '    <link rel="alternate" hreflang="th" href="' + baseUrl + '/th/">',
+      '    <link rel="alternate" hreflang="x-default" href="' + baseUrl + '/en/">',
+      '    <meta name="description" content="' + LANGUAGES.zh.siteDesc + '">',
+      '    <meta property="og:title" content="' + LANGUAGES.zh.siteTitle + '">',
+      '    <meta property="og:description" content="' + LANGUAGES.zh.siteDesc + '">',
+      '    <meta property="og:url" content="' + baseUrl + '/zh/">',
+      '    <script>window.location.href="/zh/";</script>',
+      '</head>',
+      '<body>',
+      '    <p><a href="/zh/">' + LANGUAGES.zh.siteTitle + '</a></p>',
+      '</body>',
+      '</html>'
+    ].join('\n');
+    fs.writeFileSync(rootIndexPath, rootHtml, 'utf-8');
+    console.log("  ✅ /index.html (301 \u2192 /zh/)");
+  }
+
   // 输出统计
   console.log("\n" + "=".repeat(60));
   console.log("✅ 网站生成完成!");
