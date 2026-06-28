@@ -24,3 +24,6 @@ build/
 
 # Offline packages (wheels, zips)
 packages/
+
+# Project docs (contains credentials)
+项目交接文档.md
