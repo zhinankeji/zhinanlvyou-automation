@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>指南帮 AI 助手 — 纯净离线安装包 | DeepSeek版</title>
+<meta name="description" content="314MB全量离线安装包，内置Python/Node/Git/FFmpeg，即装即用，支持政务内网/企业内网/学校机房。">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--primary:#104080;--primary-light:#1a5cc8;--accent:#07C160;--bg:#0f172a;--bg-card:#1e293b;--text:#e2e8f0;--text-muted:#94a3b8;--border:#334155}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{color:var(--primary-light);text-decoration:none}
+/* Hero */
+.hero{min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(16,64,128,.3) 0%,transparent 70%);pointer-events:none}
+.hero-badge{display:inline-block;background:rgba(7,193,96,.15);color:var(--accent);border:1px solid rgba(7,193,96,.3);border-radius:999px;padding:.35rem 1rem;font-size:.85rem;margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;margin-bottom:1rem;background:linear-gradient(135deg,#60a5fa,#07C160);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:clamp(1rem,2vw,1.2rem);color:var(--text-muted);max-width:600px;margin-bottom:2rem}
+.btn-group{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 2rem;border-radius:8px;font-weight:600;font-size:1rem;transition:all .2s;cursor:pointer;border:none}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#06b054;transform:translateY(-2px);box-shadow:0 8px 24px rgba(7,193,96,.3)}
+.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn-outline:hover{background:var(--bg-card);border-color:var(--primary-light)}
+/* Stats */
+.stats{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;margin-top:3rem}
+.stat{text-align:center}
+.stat-num{font-size:2rem;font-weight:800;color:#60a5fa}
+.stat-label{font-size:.8rem;color:var(--text-muted);margin-top:.25rem}
+/* Sections */
+.section{padding:5rem 1.5rem;max-width:1100px;margin:0 auto}
+.section-title{text-align:center;font-size:clamp(1.3rem,3vw,2rem);font-weight:700;margin-bottom:3rem}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.feature-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;transition:all .3s}
+.feature-card:hover{border-color:var(--primary-light);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.feature-icon{font-size:2rem;margin-bottom:.75rem}
+.feature-card h3{font-size:1.1rem;margin-bottom:.5rem}
+.feature-card p{font-size:.9rem;color:var(--text-muted)}
+/* Scenarios */
+.scenarios{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+.scenario-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:2rem;text-align:center}
+.scenario-icon{font-size:2.5rem;margin-bottom:1rem}
+.scenario-card h3{margin-bottom:.5rem}
+.scenario-card p{font-size:.85rem;color:var(--text-muted)}
+/* Pricing */
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;max-width:900px;margin:0 auto}
+.price-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:2rem;text-align:center;position:relative}
+.price-card.featured{border-color:var(--accent);transform:scale(1.05)}
+.price-tag{font-size:2.5rem;font-weight:800;color:var(--accent);margin:1rem 0}
+.price-tag span{font-size:1rem;color:var(--text-muted);font-weight:400}
+.price-card ul{list-style:none;text-align:left;margin:1.5rem 0}
+.price-card li{padding:.4rem 0;font-size:.9rem;color:var(--text-muted)}
+.price-card li::before{content:"✓ ";color:var(--accent);font-weight:700}
+/* FAQ */
+.faq-item{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.25rem;margin-bottom:1rem}
+.faq-q{font-weight:600;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+.faq-a{font-size:.9rem;color:var(--text-muted);padding-left:1.5rem}
+/* Footer */
+footer{text-align:center;padding:2rem;color:var(--text-muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+footer a{color:var(--text-muted);text-decoration:underline}
+/* Component list */
+.comp-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin:2rem 0}
+.comp-item{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;text-align:center}
+.comp-name{font-weight:600;font-size:.9rem}
+.comp-ver{font-size:.8rem;color:var(--text-muted);margin-top:.25rem}
+.comp-size{font-size:.75rem;color:var(--accent)}
+/* Responsive */
+@media(max-width:640px){
+  .price-card.featured{transform:none}
+  .hero{padding:1rem;min-height:80vh}
+  .section{padding:3rem 1rem}
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-badge">🚀 全新发布 v1.0</div>
+  <h1>指南帮 AI 助手</h1>
+  <p>基于 Hermes Agent 的纯净离线 AI 助手安装包。<br>预配置 DeepSeek API，314MB 全量离线，U盘即装即用。</p>
+  <div class="btn-group">
+    <a href="#download" class="btn btn-primary">📥 免费下载</a>
+    <a href="#pricing" class="btn btn-outline">💰 查看价格</a>
+    <a href="#faq" class="btn btn-outline">❓ 常见问题</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">314MB</div><div class="stat-label">全量离线包</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">内置组件</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">管理员依赖</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">U盘带走</div></div>
+  </div>
+</section>
+
+<!-- 痛点 -->
+<section class="section" id="pain">
+  <h2 class="section-title">内网部署 AI 助手有多痛苦？</h2>
+  <div style="max-width:700px;margin:0 auto;color:var(--text-muted);font-size:.95rem">
+    <p style="margin-bottom:.75rem">❌ 要装 Python、Node.js、Git、FFmpeg…… 配环境半天</p>
+    <p style="margin-bottom:.75rem">❌ Ollama 跑不动大模型，16GB 内存也勉强</p>
+    <p style="margin-bottom:.75rem">❌ 政务内网无网络，在线安装器全废</p>
+    <p style="margin-bottom:.75rem">❌ 手动配置 DeepSeek，出错了不知道哪步</p>
+    <p style="margin-top:1.5rem;color:var(--text)"><strong>我们的方案：一个包，一根 U 盘，装完即用。</strong></p>
+  </div>
+</section>
+
+<!-- 功能亮点 -->
+<section class="section" id="features" style="background:linear-gradient(180deg,var(--bg) 0%,rgba(16,64,128,.08) 100%)">
+  <h2 class="section-title">产品亮点</h2>
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-icon">📦</div>
+      <h3>全量离线</h3>
+      <p>314MB 预装 Python 3.11、Node.js 22、Git 2.48、ripgrep、FFmpeg，全量离线</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⚡</div>
+      <h3>即装即用</h3>
+      <p>双击安装脚本，输入 DeepSeek API Key，10 秒搞定。无需折腾环境变量。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <h3>零管理员权限</h3>
+      <p>用户级安装，无需管理员批准。企业 IT 部门直接下发，员工自己就能装。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🧹</div>
+      <h3>纯净无污染</h3>
+      <p>不复制当前电脑的缓存/Token/日志/个人配置。不装 Ollama 或本地模型。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🌐</div>
+      <h3>仅 DeepSeek</h3>
+      <p>只配置 DeepSeek API，不支持 OpenAI/Claude/OpenRouter。简洁专注。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔄</div>
+      <h3>一键卸载</h3>
+      <p>卸载脚本清除全部文件和环境变量。不留痕迹。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 内置组件 -->
+<section class="section">
+  <h2 class="section-title">内置组件清单</h2>
+  <div class="comp-list">
+    <div class="comp-item"><div class="comp-name">Hermes Agent</div><div class="comp-ver">0.17.0</div><div class="comp-size">AI 引擎</div></div>
+    <div class="comp-item"><div class="comp-name">Python</div><div class="comp-ver">3.11.9</div><div class="comp-size">10.7MB</div></div>
+    <div class="comp-item"><div class="comp-name">Node.js</div><div class="comp-ver">22.14.0 LTS</div><div class="comp-size">33.3MB</div></div>
+    <div class="comp-item"><div class="comp-name">Git Portable</div><div class="comp-ver">2.48.1</div><div class="comp-size">60.5MB</div></div>
+    <div class="comp-item"><div class="comp-name">ripgrep</div><div class="comp-ver">14.1.1</div><div class="comp-size">10.4MB</div></div>
+    <div class="comp-item"><div class="comp-name">FFmpeg</div><div class="comp-ver">latest GPL</div><div class="comp-size">159.5MB</div></div>
+  </div>
+</section>
+
+<!-- 应用场景 -->
+<section class="section" id="scenarios" style="background:linear-gradient(180deg,rgba(16,64,128,.08) 0%,var(--bg) 100%)">
+  <h2 class="section-title">应用场景</h2>
+  <div class="scenarios">
+    <div class="scenario-card">
+      <div class="scenario-icon">🏛️</div>
+      <h3>政务内网</h3>
+      <p>政府单位隔离网络，无法访问公网。U盘拷过去，装完就能用。</p>
+    </div>
+    <div class="scenario-card">
+      <div class="scenario-icon">🏢</div>
+      <h3>企业 IT</h3>
+      <p>给开发团队批量部署 AI 助手，统一环境，降低运维成本。</p>
+    </div>
+    <div class="scenario-card">
+      <div class="scenario-icon">🏫</div>
+      <h3>学校机房</h3>
+      <p>教学、毕设场景，学生无需配环境，专注用 AI 辅助学习。</p>
+    </div>
+    <div class="scenario-card">
+      <div class="scenario-icon">💻</div>
+      <h3>个人开发者</h3>
+      <p>刚装完系统，一键搭好开发环境 + AI 助手。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 定价 -->
+<section class="section" id="pricing">
+  <h2 class="section-title">定价方案</h2>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <h3>个人版</h3>
+      <div class="price-tag">免费</div>
+      <ul>
+        <li>全量 314MB 离线安装包</li>
+        <li>DeepSeek API 配置向导</li>
+        <li>社区文档支持</li>
+        <li>无限制使用</li>
+      </ul>
+      <a href="#download" class="btn btn-outline" style="width:100%">免费下载</a>
+    </div>
+    <div class="price-card featured">
+      <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;border-radius:999px;padding:.2rem 1rem;font-size:.8rem">推荐</div>
+      <h3>企业版</h3>
+      <div class="price-tag">¥500 <span>/ 不限台数</span></div>
+      <ul>
+        <li>个人版所有功能</li>
+        <li>批量部署脚本</li>
+        <li>1 年技术支持</li>
+        <li>定制配置服务</li>
+        <li>企业内网专属构建</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary" style="width:100%">联系购买</a>
+    </div>
+    <div class="price-card">
+      <h3>买断版</h3>
+      <div class="price-tag">¥2,000</div>
+      <ul>
+        <li>企业版所有功能</li>
+        <li>永久授权</li>
+        <li>永久技术支持</li>
+        <li>定制 Logo / 品牌</li>
+        <li>源码级支持</li>
+      </ul>
+      <a href="#contact" class="btn btn-outline" style="width:100%">联系购买</a>
+    </div>
+  </div>
+</section>
+
+<!-- 下载 -->
+<section class="section" id="download">
+  <h2 class="section-title">获取安装包</h2>
+  <div style="max-width:600px;margin:0 auto;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:2rem;text-align:center">
+    <div style="font-size:3rem;margin-bottom:1rem">📥</div>
+    <h3 style="margin-bottom:.5rem">ZhinanAI_Setup_v1.0.exe</h3>
+    <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:1.5rem">314MB 全量离线安装包 · 支持 Windows 10/11</p>
+    <div style="display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap">
+      <a href="#" class="btn btn-primary" onclick="alert('请联系微信 hibeike 获取下载链接')" style="pointer-events:auto">📥 下载安装包</a>
+      <a href="https://github.com/NousResearch/hermes-agent" target="_blank" class="btn btn-outline">查看 Hermes 源码</a>
+    </div>
+    <p style="color:var(--text-muted);font-size:.8rem;margin-top:1rem">SHA256 校验码见仓库 dependencies.lock.json</p>
+  </div>
+  <div style="margin-top:2rem;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.5rem">
+    <h4 style="margin-bottom:.75rem">手动安装方式（无 exe 时）</h4>
+    <pre style="background:var(--bg);padding:1rem;border-radius:8px;font-size:.85rem;overflow-x:auto;color:var(--text-muted)">
+cd E:\\ZhinanAI-DeepSeek-Offline
+powershell -ExecutionPolicy Bypass -File install.ps1</pre>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <h2 class="section-title">常见问题</h2>
+  <div class="faq-item">
+    <div class="faq-q">❓ 需要联网吗？</div>
+    <div class="faq-a">安装全程不需要联网。但首次使用前需要注册 DeepSeek 账号获取 API Key（需一次联网），或使用已有的 Key。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">❓ 需要管理员权限吗？</div>
+    <div class="faq-a">不需要。安装到用户目录 %LOCALAPPDATA%\\ZhinanAI，环境变量通过 setx 配置用户级 PATH。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">❓ 和 ChatBox / Open WebUI 有什么区别？</div>
+    <div class="faq-a">指南帮 AI 助手是基于 Hermes Agent 的 <strong>编程/任务 AI 助手</strong>，不是聊天界面。它可以直接执行代码、搜索文件、操控终端，适合开发者和 IT 运维使用。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">❓ 能换其他大模型吗？</div>
+    <div class="faq-a">本版本仅预配置 DeepSeek。如需其他模型（如通义千问、智谱 GLM），可在安装后通过 /model 命令切换。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">❓ 怎么卸载？</div>
+    <div class="faq-a">开始菜单 → 指南帮 AI 助手 → 卸载，或直接运行 uninstall.ps1。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">❓ 企业批量部署怎么操作？</div>
+    <div class="faq-a">企业版用户提供批量部署脚本，GPO 下发或 SCCM 推送均可。联系微信 hibeike 获取。</div>
+  </div>
+</section>
+
+<!-- 联系 -->
+<section class="section" id="contact">
+  <h2 class="section-title">联系我们</h2>
+  <div style="max-width:500px;margin:0 auto;text-align:center">
+    <p style="color:var(--text-muted);margin-bottom:1.5rem">企业采购 / 定制部署 / 技术咨询</p>
+    <div style="display:inline-flex;align-items:center;gap:.75rem;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.5rem 2rem">
+      <span style="font-size:2rem">💬</span>
+      <div><div style="font-weight:600">微信: hibeike</div><div style="font-size:.85rem;color:var(--text-muted)">添加时备注"AI助手"</div></div>
+    </div>
+    <div style="margin-top:1.5rem;font-size:.85rem;color:var(--text-muted)">
+      海南指南帮科技有限公司 · 琼ICP备XXXXXXXX号
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 海南指南帮科技有限公司 | <a href="https://zhinanbang.cn">zhinanbang.cn</a></p>
+  <p style="margin-top:.5rem;font-size:.75rem">本产品基于 <a href="https://github.com/NousResearch/hermes-agent" target="_blank">Hermes Agent</a> (MIT License) 构建</p>
+</footer>
+
+</body>
+</html>

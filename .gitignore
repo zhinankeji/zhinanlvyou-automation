@@ -1,0 +1,26 @@
+# Compiled installers
+*.exe
+*.zip
+*.7z
+*.msi
+
+# Python
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+
+# Build output
+output/
+installer/compile.log
+
+# Dev
+node_modules/
+.venv/
+.vscode/
+
+# Build artifacts (pre-extracted components)
+build/
+
+# Offline packages (wheels, zips)
+packages/

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>安装指南 — 指南帮 AI 助手</title>
+<meta name="description" content="指南帮 AI 助手 Windows 安装图文教程">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--primary:#104080;--accent:#07C160;--bg:#0f172a;--bg-card:#1e293b;--text:#e2e8f0;--text-muted:#94a3b8;--border:#334155}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:#1a5cc8;text-decoration:none}
+.top-bar{background:var(--bg-card);border-bottom:1px solid var(--border);padding:.75rem 1.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:100}
+.top-bar a{color:var(--text-muted);font-size:.9rem}
+.top-bar a:hover{color:var(--text)}
+.top-bar .brand{font-weight:700;color:var(--text);font-size:1rem}
+.top-bar .brand .g{color:var(--accent)}
+.container{max-width:800px;margin:0 auto;padding:2rem 1.5rem 4rem}
+h1{font-size:2rem;margin-bottom:.5rem}
+h2{font-size:1.3rem;margin:2.5rem 0 1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+p{color:var(--text-muted);margin-bottom:1rem}
+.step{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-size:.85rem;font-weight:700;margin-right:.5rem}
+.step-title{font-weight:600;font-size:1.05rem;margin-bottom:.75rem}
+.step-desc{color:var(--text-muted);font-size:.9rem;margin-bottom:.5rem}
+.term{background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:1rem;font-family:Consolas,monospace;font-size:.85rem;line-height:1.5;overflow-x:auto;margin-bottom:1rem}
+.prom{color:#58a6ff}
+.cmd{color:#e6edf3}
+.out{color:#8b949e}
+.ok{color:#07C160}
+.warn-box{background:rgba(210,153,34,.1);border:1px solid rgba(210,153,34,.3);border-radius:8px;padding:1rem;margin:1rem 0;font-size:.9rem}
+.btn-dl{display:inline-block;background:var(--accent);color:#fff;padding:.75rem 2rem;border-radius:8px;font-weight:600;text-decoration:none}
+footer{text-align:center;padding:2rem;color:var(--text-muted);font-size:.85rem;border-top:1px solid var(--border)}
+footer a{color:var(--text-muted)}
+</style>
+</head>
+<body>
+<div class="top-bar"><a href="/" class="brand">▶ <span class="g">AI</span> 指南帮</a><a href="/">首页</a><a href="/#features">产品亮点</a><a href="/#pricing">定价</a><a href="/#download">下载</a><a href="/help/" style="color:var(--accent)">安装指南</a><a href="/#faq">FAQ</a></div>
+<div class="container">
+<p style="margin-bottom:1.5rem"><a href="/" style="color:var(--text-muted)">← 返回首页</a></p>
+<h1>安装指南</h1>
+<p>从下载到使用，全程图文教程。遇到问题参考 <a href="/#faq">FAQ</a> 或联系微信 hibeike。</p>
+<h2>一、下载并解压</h2>
+<div class="step"><div class="step-title"><span class="step-num">1</span> 点击下载</div><div class="step-desc">在首页点击绿色“免费下载”按钮，获取 ZhinanAI_Setup_v1.0_offline.zip (311MB)。</div></div>
+<div class="step"><div class="step-title"><span class="step-num">2</span> 解压到桌面</div><div class="step-desc">将 ZIP 文件解压到桌面或任意文件夹，目录结构如下：</div><div class="term"><span class="out">ZhinanAI-DeepSeek-Offline/<br>├── <strong>install.ps1</strong> ← 安装脚本<br>├── uninstall.ps1<br>├── packages/ ← 离线安装包<br>└── README.md</span></div></div>
+<h2>二、运行安装</h2>
+<div class="step"><div class="step-title"><span class="step-num">3</span> 右键 install.ps1 → “用 PowerShell 运行”</div><div class="step-desc">找到 install.ps1，右键选择“用 PowerShell 运行”。</div><div class="warn-box"><b>⚠</b> 如果没有这个选项，打开 PowerShell 输入：<br><div class="term" style="margin-top:.5rem"><span class="prom">PS&gt;</span> <span class="cmd">Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force</span><br><span class="prom">PS&gt;</span> <span class="cmd">.\install.ps1</span></div></div></div>
+<div class="step"><div class="step-title"><span class="step-num">4</span> 等待自动安装</div><div class="step-desc">系统自动安装 Python → pip → Hermes Agent → Node.js → Git → ripgrep → FFmpeg，无需人工干预。</div><div class="term"><span class="ok">==========================================</span><br><span class="ok">   指南帮 AI 助手 - 安装程序 v1.0</span><br><span class="ok">==========================================</span><br><br><span class="out">--- 步骤 1/12: 安装 Python 3.11 ---</span><br><span class="out">[信息] 正在复制 Python 3.11.9 ...</span><br><span class="ok">[成功] Python 3.11.9 已安装</span><br><span class="out">--- 步骤 2/12: 安装 pip ---</span><br><span class="ok">[成功] pip 安装成功</span><br><span class="out">--- 步骤 3/12: 安装 Hermes Agent ---</span><br><span class="ok">[成功] Hermes Agent 安装完成</span><br><span class="out">...</span><br><span class="ok">[成功] PATH 环境变量配置完成</span></div></div>
+<h2>三、配置 DeepSeek API Key</h2>
+<div class="step"><div class="step-title"><span class="step-num">5</span> 输入 API Key</div><div class="step-desc">安装到第 9 步时会自动弹出提示，请输入您的 DeepSeek API Key：</div><div class="term"><span class="out">--- 步骤 9/12: 配置 DeepSeek API ---</span><br><span class="ok">请输入您的 DeepSeek API Key：</span><br><span class="out">  (如果没有，访问 https://platform.deepseek.com/ 注册获取)</span><br><span class="prom">  API Key:</span> <span class="cmd">sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><br><br><span class="ok">[成功] 配置文件已创建</span></div><div class="warn-box"><b>ℹ</b> 如果没有 Key，可以先按回车跳过，安装完成后编辑 %APPDATA%\ZhinanAI\config.yaml 填入。</div></div>
+<h2>四、安装完成</h2>
+<div class="step"><div class="step-title"><span class="step-num">6</span> 安装完成</div><div class="step-desc">桌面会多出“指南帮 AI 助手”快捷方式：</div><div class="term"><span class="ok">==========================================</span><br><span class="ok">   安装完成！</span><br><span class="ok">==========================================</span><br><br><span class="out">已安装的组件：</span><br><span class="out">  - Python 3.11.9 / Node.js 22.14.0 / Git 2.48.1 / ripgrep 14.1.1 / FFmpeg / Hermes 0.17.0</span><br><br><span class="ok">配置文件: %APPDATA%\ZhinanAI\config.yaml</span><br><span class="ok">桌面快捷方式: 指南帮 AI 助手.lnk</span></div></div>
+<div class="step"><div class="step-title"><span class="step-num">7</span> 双击桌面快捷方式启动</div><div class="step-desc">双击桌面“指南帮 AI 助手”，启动 Hermes Agent。</div><div class="warn-box"><b>⚠</b> 第一次启动时输入 /model ，选择 provider=deepseek, model=deepseek-v4-pro</div></div>
+<h2>五、开始使用</h2>
+<div class="step"><div class="step-title">就绪！可以开始使用了</div><div class="step-desc">在 Hermes 终端中输入任务让 AI 处理：</div><div class="term"><span class="prom">></span> <span class="cmd">帮我分析这个目录下的代码</span><br><span class="out">正在分析 ...</span><br><br><span class="prom">></span> <span class="cmd">写一个 Python 脚本处理 Excel 文件</span><br><span class="out">正在生成 ...</span></div></div>
+<h2>附录：常见问题</h2>
+<div class="step"><div class="step-title">问题：右键没有“用 PowerShell 运行”</div><div class="step-desc">打开 PowerShell，输入：</div><div class="term"><span class="prom">PS&gt;</span> <span class="cmd">Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force</span><br><span class="prom">PS&gt;</span> <span class="cmd">.\install.ps1</span></div></div>
+<div class="step"><div class="step-title">问题：找不到 hermes 命令</div><div class="step-desc">关闭终端重新打开，或注销重新登录 Windows。</div></div>
+<div class="step"><div class="step-title">问题：如何卸载</div><div class="step-desc">开始菜单 → 指南帮 AI 助手 → 卸载，或双击 uninstall.ps1。</div></div>
+<div style="text-align:center;margin:3rem 0"><a href="/download/ZhinanAI_Setup_v1.0_offline.zip" class="btn-dl">下载安装包 (311MB)</a></div>
+</div>
+<footer><p>© 2026 海南指南邦科技有限公司 | <a href="https://beian.miit.gov.cn/" target="_blank">琼ICP备14002436号-5</a></p></footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿# 指南帮 AI 助手 配置文件模板
+# 安装时自动生成，可在此修改
+
+app:
+  name: "指南帮 AI 助手"
+  version: "1.0.0"
+  language: "zh-CN"
+
+# DeepSeek API 配置
+# 请将 YOUR_API_KEY 替换为你的真实 Key
+deepseek:
+  api_key: "YOUR_DEEPSEEK_API_KEY"
+  base_url: "https://api.deepseek.com"
+  model: "deepseek-v4-pro"
+  chat_model: "deepseek-v4-flash"
+
+# Hermes Agent 模型配置
+model:
+  default: "deepseek-v4-pro"
+  provider: "deepseek"
+  base_url: "https://api.deepseek.com"
+
+# 辅助视觉模型（DeepSeek 不支持看图，需要配置视觉模型）
+auxiliary:
+  vision:
+    provider: "openai"
+    model: "qwen-vl-max"
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+
+# 组件路径（安装时自动填充）
+paths:
+  python: ""
+  node: ""
+  git: ""
+  ripgrep: ""
+  ffmpeg: ""
+
+# 启动配置
+startup:
+  auto_start: true
